@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: url("https://i.postimg.cc/zG43Szh7/leaf-1631181-1920.jpg");
+  /*https://i.postimg.cc/tCwF6D8T/leaf-318743-1920.jpg"*/
+  background-position: center;
+  background-size:cover;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 22px;
+  color: white;
+}
+.container {
+  max-width: 320px;
+  min-width: 280px;
+  min-height: 420px;
+  margin: 35px auto;
+  padding: 25px 20px;
+  background: url("https://i.postimg.cc/tTqq7Q5x/woodenBg.jpg");
+  border-radius: 7px;
+  box-shadow: 8px 8px 5px black, 8px -8px 5px black, -8px 8px 5px black, -8px -8px 5px black;
+}
+.container .displayContainer {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  text-align: right;
+  background-color: black;
+  border: 3px inset black;
+}
+.container .displayContainer .formula {
+  width: 100%;
+  height: 50%;
+  padding: 5px 4px;
+  color: brown;
+  font-size: 17px;
+}
+.container .displayContainer .display {
+  width: 100%;
+  height: 50%;
+  padding: 5px 4px;
+  font-size: 22px;
+}
+.container .keypad {
+  width: 99%;
+  height: 240px;
+  margin: auto;
+  margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.container .keypad .row {
+  width: 100%;
+  height: 48px;
+}
+.container .keypad .row .doubleKey, .container .keypad .row .key {
+  float: left;
+  height: 100%;
+  text-align: center;
+  padding-top: 11px;
+  border: 2px outset black;
+}
+.container .keypad .row .doubleKey {
+  width: 50%;
+  background-color: rgba(255, 0, 0, 0.4);
+}
+.container .keypad .row .key {
+  width: 25%;
+}
+.container .keypad .row div[class=doubleKey]:hover {
+  background-color: rgba(255, 0, 0, 0.6);
+  cursor: pointer;
+}
+.container .keypad .row div[class=key]:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.container .keypad .row div[class=doubleKey]:active, .container .keypad .row div[class=key]:active {
+  border: 2px inset black;
+}
+footer p {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+footer p a {
+  text-decoration: none;
+  color: #befffa;
+}
